@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(90deg, #7c3aed, #38bdf8);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+  padding: 80px 40px;
+  scroll-margin-top: 100px;
+  }
+
+    h2 {
+      color: #38bdf8;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .about-container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 3;
+    }
+
+    .about-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-img img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 0; 
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #7c3aed;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+   .certificates img {
+  width: 100%;
+  height: 200px;         
+  object-fit: cover;     
+  border-radius: 10px;
+  transition: transform 0.3s;
+   }
+
+    .certificates img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card about-container">
+    <div class="about-text">
+      <p>Hello! I am a passionate and curious individual with a strong interest in technology and creativity. I enjoy building projects, exploring new ideas, and continuously learning new skills to improve myself. Currently, I am pursuing my BCA, where I am developing a foundation in web development and programming.
+
+        Apart from academics, I like to maintain a balanced lifestyle. I regularly go to the gym and enjoy cooking in my free time. I am a big football fan and proudly support Manchester United. I also have a strong interest in motorsports, especially Formula 1, where I support Scuderia Ferrari.
+
+        In addition, I am a cricket enthusiast and deeply admire MS Dhoni for his calm leadership and finishing ability.</p>
+    </div>
+    <div class="about-img">
+      <img src="ABOUT.jpg" alt="Your Photo">
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Snake Game</h3>
+    <p>This is a basic block snake game.</p>
+    <a class="button" href="snakegame.html">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>Calculator</h3>
+    <p>A basic funcitonable calculator</p>
+    <a class="button" href="calculator.html">View Project</a>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>Cooking</span>
+    <span>Dancing</span>
+    <span>Drawing</span>
+    <span>HTML</span>
+    <span>CSS</span> 
+    <span>C</span>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements & Qualifications</h2>
+  <div class="card">
+   <ul>
+  <li>Completed 10th grade from Orchids The International School (CBSE Board)</li>
+  <li>Completed 11th and 12th in Commerce from K.J. Somaiya College</li>
+  <li>Currently pursuing BCA from Somaiya School of Basic and Applied Sciences</li>
+  <li>Achieved Gold Medal in Karate (Fight) and Bronze Medal in Kata, along with earning a Black Belt in Karate</li>
+  <li>Won Bronze Medals in Shot Put and Discus Throw at the school level</li>
+  <li>Actively participated in group dance competitions, contributing to winning Best College Awards while representing my college</li>
+</ul>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="card certificates">
+    <img src="certi.jpg" alt="Certificate 1">
+    <img src="certi1.jpg" alt="Certificate 2">
+    <img src="certi2.jpg" alt="Certificate 3">
+    <img src="certi3.jpg" alt="Certificate 4">
+    <img src="certi4.jpg" alt="Certificate 5">
+    <img src="certi5.jpg" alt="Certificate 6">
+    <img src="certi6.jpg" alt="Certificate 7">
+    <img src="certi7.jpg" alt="Certificate 8">
+    <img src="certi8.jpg" alt="Certificate 9">
+    <img src="certi9.jpg" alt="Certificate 10">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Social & Contact</h2>
+  <div class="card">
+    <p>Email: parshva3007@gmail.com</p>
+    <p>LinkedIn: <a class="button" href="https://www.linkedin.com/in/parshva-parikh-5187022b9">Visit Profile</a></p>
+    <p>Instagram: <a class="button" href="https://www.instagram.com/parshvaparikh?igsh=Y2JrZmdyNHpmcHIx&utm_source=qr">Follow Me</a></p>
+  </div>
+</section>
+
+
+
+</body>
+</html>
